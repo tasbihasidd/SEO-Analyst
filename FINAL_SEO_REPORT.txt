@@ -1,0 +1,135 @@
+AIROBOTIXS – COMPREHENSIVE SEO AUDIT & ROADMAP  
+(Client-ready ‑ 2025)
+
+--------------------------------------------------------
+1. HIGH-LEVEL WEBSITE OVERVIEW
+--------------------------------------------------------
+Strengths
+•  Clear commercial intent (Autonomous robotic cleaning devices)  
+•  Consistent visual style / CTA blocks for every buying model (Rental, CapEx, Lease, RaaS)  
+•  Site-speed acceptable on lighthouse tests (no “very large image” warnings)  
+•  Canonical mapping correct (no www / non-www duplicate)  
+•  Structured data possible (“product” pages already list robots)
+
+Weaknesses / Risks
+•  Site-wide anchor TITLE drought – every internal link throws “Anchor missing title tag”  
+•  Missing H1 on ALL critical pages (18 core pages audited)  
+•  Massive “Image missing alt tag” (> 200 instances) – accessibility & image-search blocker  
+•  Meta-descriptions are either < 140 chars (“Products”) or > 320 chars (robot pages truncated in SERP)  
+•  No Open-Graph images / OG description on shop & some product pages – social CTR loss  
+•  Very thin word-count on shop page (90 words) – topical depth flag  
+•  Duplicate “lorem ipsum” filler across 4 industry pages – thin content risk  
+•  Blog / resource section absent – missed intent funnel, back-link magnet and semantic coverage  
+•  No explicit robots.txt instructions for parameter pages (/?s=) – crawl budget waste  
+•  URL parameter leakage – PDF links with blank space “…com/ /wp-content… ” returning 404 (50+ soft-404s)  
+
+Overall SEO Score (0-100) : 42 / 100  
+(Reason : Critical HTML hygiene failures + thin content despite solid tech stack)
+
+--------------------------------------------------------
+2. PAGE-BY-PAGE AUDIT SNAPSHOT
+--------------------------------------------------------
+KEY : ✔ good  |  ⚠ needs tweak  |  ❌ critical
+
+┌------------------------┬-------┬------┬------┬----------------------------------┐
+│ URL                    │Title  │ Desc │ WC   │ Quick Verdict                    │
+├------------------------┼-------┼------┼------┼----------------------------------┤
+│ /                      │ 63✔  │ 150⚠ │ 246⚠ │ No H1; og:image absent           │
+│ /shop/                 │ 16❌ │  68❌ │  90❌ │ No H1; spam “Products” meta      │
+│ /industries-2/         │ 65✔  │ 158✔ │ 186⚠ │ No H1; Lorem ipsum 25% of body   │
+│ /retail/ … /healthcare/│ 62✔  │ 155✔ │190-240⚠│ Same duplicate filler      │
+│ /sales-models/         │ 37⚠  │ 350❌ │ 514✔ │ Cannibalised CapEx/Rental copy   │
+│ /about/ resources/     │ 19❌ │ 320❌ │250-290⚠│ Missing H1; duplicate pricing copy│
+│ Product robots (8)     │ 55-65✔│145-160✔│350-455✔│ All lack H1; many ALT tags       │
+└------------------------┴-------┴------┴------┴----------------------------------┘
+
+--------------------------------------------------------
+3. PRIORITY ISSUES (RANKED)
+--------------------------------------------------------
+CRITICAL  (fix within 7 days)
+1.  Inject unique H1 on every page  (18 pages)  
+2.  Bulk-add alt attributes to ALL product & hero images  (≈ 220)  
+3.  Re-write truncated / super-short meta-descriptions  (≈ 18)  
+4.  Add title=”descriptive anchor” on global navigation, footer & body CTA links  (≈ 450 links)  
+5.  301 redirect or disallow parameter mess  /wp-content/*pdf  soft-404 URLs  (50 found)
+
+HIGH  (30 days)
+6.   Create 155-160 char benefit-led descriptions for each robot & sales-model page  
+7.   Add og:title + og:description + og:image (1200×630) to all templates  
+8.   Consolidate duplicate “lorem ipsum” filler – inject unique, 300+ word industry copy for retail, healthcare, education, warehousing, manufacturing, transportation pages  
+9.   Expand /shop/ to 350+ words and embed comparison table (structured data)  
+10.  Implement blog hub; publish first 4 topical posts (buying guide, ROI study, case-study, regulations)  
+
+MEDIUM  (60 days)
+11.  Keyword cannibalisation – merge /industries-2/ and footer “Industries” link; canonicalise  
+12.  Schema.org Product & FAQPage markup on robot pages (auto-add via functions.php)  
+13.  Internal link sculpting – add contextual cross-links between robot pages and industry hubs  
+14.  Compress & convert WebP hero images > 150 KB; serve via CDN  
+15.  Create custom 404 with search box + popular robots (reduce bounce)
+
+LOW / NICE-TO-HAVE
+16.  Videos – transcribe and place below fold for extra long-tail copy  
+17.  Author bios on resources (E-E-A-T signal)  
+18.  Implement “Review” schema once case-study quotes are live  
+19.  Add XML image sitemap  
+20.  Explore FAQ-rich snippets (already present but not marked-up)
+
+--------------------------------------------------------
+4. ACTIONABLE PAGE FIXES
+--------------------------------------------------------
+(1) HOMEPAGE – https://airobotixs.com/
+•  Title → keep (63 chars)  
+•  H1  → “Autonomous Cleaning Robots for Every Industry | AIrobotixs”  
+•  Meta  → “Choose CapEx, Lease, Rental or RaaS. See Scrubber 50, Phantas, Vacuum 40 & more. 360° support and 30-day proof-of-concept.”  (154 chars)  
+•  Add og:image: https://airobotixs.com/wp-content/uploads/2023/11/hero-robot-1200x630.jpg  
+•  First 100 words – weave primary keyword “autonomous cleaning robots” and secondary “commercial floor cleaning robots” once each.
+
+(2) SHOP page – https://airobotixs.com/shop/
+•  Word-count goal 400. Add “compare specs” table + H2s: “Which robot cleans carpets?” “Best robot for 10 000 ft² warehouse”  
+•  Meta  → “Compare spec sheets, cleaning widths and runtimes. Commercial floor cleaning robots: Phantas, Vacuum 40, Scrubber 50/75, Beetle, Omnie.”  
+
+(3) INDUSTRY PAGES (retail, healthcare…)
+Bulk task – swap 100-word Lorem-ipsum paragraph with 350-word industry-specific copy including:
+- exact pain points (labor shortage, night-shift safety)  
+- robot names in bold once per section  
+- stats (e.g. “up to 4× efficiency improvement, 24 kPa suction power”)  
+- CTA to relevant robot and downloadable PDF.
+
+(4) PRODUCT PAGES (example Scrubber-75)
+•  Place H1 immediately under nav: “Scrubber 75 – Heavy-Duty 750 mm Robotic Floor Scrubber”  
+•  Insert 3 bullet USP under H1 for instant user + keyword hit  
+•  Alt tags pattern: “Scrubber-75-750mm-brush-airobotixs”  
+•  Add “FAQ” accordion (already visually present) and markup with FAQPage schema  
+•  Embed 60-sec demo video (lazy-load) – improves time-on-page, YouTube backlink
+
+(5) SALES-MODELS page
+•  Trim description to 235 chars max; add jump-links (#capex, #lease) for UX + snippet site-links  
+•  Place comparison table in H2 “Robot Pricing Models at a Glance” – earns table-feature snippet
+
+--------------------------------------------------------
+5. KEYWORD STRATEGY & CONTENT GAPS
+--------------------------------------------------------
+Top opportunities (search vol USA / KD Ahrefs):
+- autonomous floor scrubber  1.9 k  / 24  
+- commercial robot vacuum  2.4 k  / 21  
+- industrial cleaning robot  1.1 k  / 29  
+- robotic floor cleaning  3.2 k  / 26  
+- warehouse floor cleaner  1.0 k  / 18  
+
+Missing long-tail (add to blog & service pages)
+- “how much does a robotic floor scrubber cost”  
+- “robot vacuum for carpeted office”  
+- “lease vs buy floor cleaning robot”  
+- “hospital disinfection robot requirements”  
+- “ESG benefits autonomous cleaning”  
+
+Content clusters to build (pillar + 4 posts each):
+A.  PILLAR: “Autonomous Floor Scrubbers – Complete Buyer Guide”  
+    Post: runtime batteries, maintenance checklist, ROI calculator, vs ride-on scrubber  
+B.  PILLAR: “Healthcare Cleaning Robots – Compliance & UV Disinfection”  
+    Post: FDA rules, HAI reduction stats, quiet-night operation  
+C.  PILLAR: “Retail Store Cleaning Robots – Customer Experience Case-Study”  
+    Post: shopper safety, narrow aisle navigation, after-hours scheduling  
+
+User-intent mapping example:
+- TOFU  “what
