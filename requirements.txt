@@ -1,0 +1,6 @@
+pyseoanalyzer==2025.4.3
+langchain==0.3.22
+langchain-openai==0.2.3
+python-dotenv==1.1.0
+streamlit==1.51.0
+
