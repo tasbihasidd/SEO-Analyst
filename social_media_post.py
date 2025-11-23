@@ -10,7 +10,7 @@ from google.genai import types
 load_dotenv()
 
 GEMINI_KEY = st.secrets["GEMINI_API_KEY"]
-OPENAI_KEY = st.secets["OPENAI_API_KEY"]
+OPENAI_KEY = st.secrets["OPENAI_API_KEY"]
 
 # ======================================================
 # GOOGLE IMAGEN 4 — SAFE IMAGE GENERATOR
